@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript</title>
+</head>
+  <style>
+    #h4{
+      margin-top: 20px;
+      margin-right:40px;
+      margin-bottom:40px;
+      margin-left:20px;
+      color: grey;
+      font-size: 30px;
+      text-align: center;
+      
+    }
+    .row{
+        
+      text-align: center;
+    }
+  
+  </style>
+
+<body>
+  <h4 id="h4">learning javascript</h4>
+  <div class="row">
+<div id="div">changed text</div>
+  <button onclick="changeThetext()">Change text</button>
+  <button onclick="changeThecolor()">Change color</button>
+  <br>
+  <br>
+  <hr>
+  <br>Name:
+  <input type="text" id="name">
+  <br><br>
+
+  <button onclick="Greeting()">Say Hello</button>
+
+
+</div>
+
+<script>
+   function changeThetext(){
+     document.getElementById("div").innerHTML = "javascript change it";
+        }
+   function changeThecolor(){
+     document.getElementById("div").style = "color:red";
+   }     
+   function Greeting(){
+     name = document.getElementById("name").value;
+     alert("Hello " + name);
+   }
+  
+</script>
+</body>
+</html>
